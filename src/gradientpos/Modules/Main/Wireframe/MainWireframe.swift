@@ -34,10 +34,8 @@ class MainWireframe: MainWireframeProtocol {
 	}
 	
 	func presentRootScreen() {
-		
-		
-		let homeWireframe = HomeWireframe(mainWireframe: self)
-		HomeWireframe.presentSelfWithViewModel(viewModel)
+        let homeWireframe = HomeWireframe(mainWireframe: self)
+        homeWireframe.presentSelf()
 	}
 	
 	private func createModule() -> UIViewController {

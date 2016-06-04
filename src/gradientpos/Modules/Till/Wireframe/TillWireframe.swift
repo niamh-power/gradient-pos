@@ -18,7 +18,7 @@ class TillWireframe {
 		let interactor = TillInteractor(
 			dataManager: TillDataManager(
 				appContentDataStore: JsonFileDataStore(
-					path: mainWireframe.config.appContentFilePath!)))
+					path: mainWireframe.config.appContentFilePath)))
 
 		let presenter = TillPresenter(
 			view: viewController, 

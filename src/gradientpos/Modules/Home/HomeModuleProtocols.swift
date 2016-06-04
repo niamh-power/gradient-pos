@@ -5,6 +5,7 @@ import UIKit
 protocol HomeWireframeProtocol: class {
 	init(mainWireframe: MainWireframe)
 	func presentSelf()
+    func presentTillView()
 }
 
 protocol HomeViewProtocol: class {
@@ -17,6 +18,7 @@ protocol HomePresenterProtocol: class {
 		interactor: HomeInteractorInputProtocol, 
 		wireframe: HomeWireframeProtocol)
 	func prepareView()
+    func showTill()
 }
 
 protocol HomeInteractorOutputProtocol: class {

@@ -18,7 +18,7 @@ class HomeWireframe {
 		let interactor = HomeInteractor(
 			dataManager: HomeDataManager(
 				appContentDataStore: JsonFileDataStore(
-					path: mainWireframe.config.appContentFilePath!)))
+					path: mainWireframe.config.appContentFilePath)))
 
 		let presenter = HomePresenter(
 			view: viewController, 
@@ -39,4 +39,9 @@ extension HomeWireframe: HomeWireframeProtocol {
 		let module = self.createModule()
 		mainWireframe.router.navigateToViewController(module.view as! UIViewController)
 	}
+    
+    func presentTillView() {
+        let wireframe = TillWireframe(mainWireframe: mainWireframe)
+        wireframe.presentSelf()
+    }
 }

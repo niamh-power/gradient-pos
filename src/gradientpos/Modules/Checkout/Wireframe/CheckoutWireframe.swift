@@ -18,7 +18,7 @@ class CheckoutWireframe {
 		let interactor = CheckoutInteractor(
 			dataManager: CheckoutDataManager(
 				appContentDataStore: JsonFileDataStore(
-					path: mainWireframe.config.appContentFilePath!)))
+					path: mainWireframe.config.appContentFilePath)))
 
 		let presenter = CheckoutPresenter(
 			view: viewController, 

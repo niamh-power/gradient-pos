@@ -31,6 +31,7 @@
 		7A3E4C241D01E1EA0075802A /* Checkout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A3E4C151D01E1EA0075802A /* Checkout.storyboard */; };
 		7A3E4C251D01E1EA0075802A /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3E4C161D01E1EA0075802A /* CheckoutViewController.swift */; };
 		7A3E4C261D01E1EA0075802A /* CheckoutWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3E4C181D01E1EA0075802A /* CheckoutWireframe.swift */; };
+		7A3E4C281D01E4B00075802A /* CheckoutSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3E4C271D01E4B00075802A /* CheckoutSpec.swift */; };
 		BD0ED6B81C5117EC0013F4C6 /* PlistFileDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0ED6B71C5117EC0013F4C6 /* PlistFileDataStore.swift */; };
 		BD6F307B1C8467C2000235F4 /* ApiProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6F307A1C8467C2000235F4 /* ApiProtocol.swift */; };
 		BDF5771C1BD7C52B0042652F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDF576491BD7C52B0042652F /* LaunchScreen.storyboard */; };
@@ -45,7 +46,6 @@
 		BDF5780E1BD7C7D20042652F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDF577CD1BD7C7D20042652F /* Main.storyboard */; };
 		BDF578111BD7C7D20042652F /* MainWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF577D41BD7C7D20042652F /* MainWireframe.swift */; };
 		BDF578171BD7C7D20042652F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDF577DD1BD7C7D20042652F /* Images.xcassets */; };
-		BDF578191BD7C7D20042652F /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF577E11BD7C7D20042652F /* Api.swift */; };
 		BDF5781A1BD7C7D20042652F /* DataStoreReaderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF577E21BD7C7D20042652F /* DataStoreReaderProtocol.swift */; };
 		BDF5781B1BD7C7D20042652F /* DataStoreWriterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF577E31BD7C7D20042652F /* DataStoreWriterProtocol.swift */; };
 		BDF5781C1BD7C7D20042652F /* JsonFileDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF577E41BD7C7D20042652F /* JsonFileDataStore.swift */; };
@@ -93,6 +93,7 @@
 		7A3E4C151D01E1EA0075802A /* Checkout.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Checkout.storyboard; sourceTree = "<group>"; };
 		7A3E4C161D01E1EA0075802A /* CheckoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
 		7A3E4C181D01E1EA0075802A /* CheckoutWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutWireframe.swift; sourceTree = "<group>"; };
+		7A3E4C271D01E4B00075802A /* CheckoutSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutSpec.swift; sourceTree = "<group>"; };
 		83B28AEE6C0ACC792716BF8E /* Pods-gradientpos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gradientpos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gradientpos/Pods-gradientpos.debug.xcconfig"; sourceTree = "<group>"; };
 		BD0ED6B71C5117EC0013F4C6 /* PlistFileDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlistFileDataStore.swift; sourceTree = "<group>"; };
 		BD6F307A1C8467C2000235F4 /* ApiProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiProtocol.swift; sourceTree = "<group>"; };
@@ -111,7 +112,6 @@
 		BDF577CE1BD7C7D20042652F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BDF577D41BD7C7D20042652F /* MainWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWireframe.swift; sourceTree = "<group>"; };
 		BDF577DD1BD7C7D20042652F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		BDF577E11BD7C7D20042652F /* Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Api.swift; path = Data/Api.swift; sourceTree = "<group>"; };
 		BDF577E21BD7C7D20042652F /* DataStoreReaderProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataStoreReaderProtocol.swift; path = Data/DataStoreReaderProtocol.swift; sourceTree = "<group>"; };
 		BDF577E31BD7C7D20042652F /* DataStoreWriterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataStoreWriterProtocol.swift; path = Data/DataStoreWriterProtocol.swift; sourceTree = "<group>"; };
 		BDF577E41BD7C7D20042652F /* JsonFileDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JsonFileDataStore.swift; path = Data/JsonFileDataStore.swift; sourceTree = "<group>"; };
@@ -353,6 +353,7 @@
 			children = (
 				BDF577181BD7C52B0042652F /* Info.plist */,
 				3FB751801C0DB3E90038C226 /* DolphinSpec.swift */,
+				7A3E4C271D01E4B00075802A /* CheckoutSpec.swift */,
 			);
 			path = gradientposTests;
 			sourceTree = "<group>";
@@ -460,7 +461,6 @@
 		BDF577DF1BD7C7D20042652F /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				BDF577E11BD7C7D20042652F /* Api.swift */,
 				BDF577E21BD7C7D20042652F /* DataStoreReaderProtocol.swift */,
 				BDF577E31BD7C7D20042652F /* DataStoreWriterProtocol.swift */,
 				BDF577E41BD7C7D20042652F /* JsonFileDataStore.swift */,
@@ -497,12 +497,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F20C4351BBED5FD007B72AB /* Build configuration list for PBXNativeTarget "gradientposTests" */;
 			buildPhases = (
-				EBFE777A236C68EC650B7D20 /* 📦 Check Pods Manifest.lock */,
+				EBFE777A236C68EC650B7D20 /* [CP] Check Pods Manifest.lock */,
 				3F20C42A1BBED5FD007B72AB /* Sources */,
 				3F20C42B1BBED5FD007B72AB /* Frameworks */,
 				3F20C42C1BBED5FD007B72AB /* Resources */,
-				D7159FC85628E2426B82D0E1 /* 📦 Embed Pods Frameworks */,
-				27BBA312763BA27E3B6F5161 /* 📦 Copy Pods Resources */,
+				D7159FC85628E2426B82D0E1 /* [CP] Embed Pods Frameworks */,
+				27BBA312763BA27E3B6F5161 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -518,13 +518,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BDA84D951BBE86F5009486AB /* Build configuration list for PBXNativeTarget "gradientpos" */;
 			buildPhases = (
-				742CB777E976930D9EFF08F8 /* 📦 Check Pods Manifest.lock */,
+				742CB777E976930D9EFF08F8 /* [CP] Check Pods Manifest.lock */,
 				BDA84D7A1BBE86F5009486AB /* Sources */,
 				BDA84D7B1BBE86F5009486AB /* Frameworks */,
 				BDA84D7C1BBE86F5009486AB /* Resources */,
 				BD85FBC51BDE8C400098F342 /* ShellScript */,
-				E3B19578FB420C34BE66289F /* 📦 Embed Pods Frameworks */,
-				43AFA3340B9BD2CAAB974E95 /* 📦 Copy Pods Resources */,
+				E3B19578FB420C34BE66289F /* [CP] Embed Pods Frameworks */,
+				43AFA3340B9BD2CAAB974E95 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -599,14 +599,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		27BBA312763BA27E3B6F5161 /* 📦 Copy Pods Resources */ = {
+		27BBA312763BA27E3B6F5161 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -614,14 +614,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gradientposTests/Pods-gradientposTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		43AFA3340B9BD2CAAB974E95 /* 📦 Copy Pods Resources */ = {
+		43AFA3340B9BD2CAAB974E95 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -629,14 +629,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gradientpos/Pods-gradientpos-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		742CB777E976930D9EFF08F8 /* 📦 Check Pods Manifest.lock */ = {
+		742CB777E976930D9EFF08F8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -657,14 +657,14 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Fabric/run\" 0ae7c1dd2c77628cbc322a6aa34f35759ddffb50 58a040c3b888bc830c2460bbfa0992befa37b3f3b23f5286087e3ab1a59595a1";
 		};
-		D7159FC85628E2426B82D0E1 /* 📦 Embed Pods Frameworks */ = {
+		D7159FC85628E2426B82D0E1 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -672,14 +672,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gradientposTests/Pods-gradientposTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E3B19578FB420C34BE66289F /* 📦 Embed Pods Frameworks */ = {
+		E3B19578FB420C34BE66289F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -687,14 +687,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gradientpos/Pods-gradientpos-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EBFE777A236C68EC650B7D20 /* 📦 Check Pods Manifest.lock */ = {
+		EBFE777A236C68EC650B7D20 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -709,6 +709,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A3E4C281D01E4B00075802A /* CheckoutSpec.swift in Sources */,
 				3FB751811C0DB3E90038C226 /* DolphinSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -739,7 +740,6 @@
 				BDF5780B1BD7C7D20042652F /* MainInteractor.swift in Sources */,
 				BDF5781B1BD7C7D20042652F /* DataStoreWriterProtocol.swift in Sources */,
 				BDF5780D1BD7C7D20042652F /* MainPresenter.swift in Sources */,
-				BDF578191BD7C7D20042652F /* Api.swift in Sources */,
 				BDF5780C1BD7C7D20042652F /* MainModuleProtocols.swift in Sources */,
 				7A3E4BFE1D01E0170075802A /* HomeWireframe.swift in Sources */,
 				BDF577F41BD7C7D20042652F /* ExampleEntity.swift in Sources */,

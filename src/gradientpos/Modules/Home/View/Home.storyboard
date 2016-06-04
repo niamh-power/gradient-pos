@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Home View Controller-->
@@ -17,6 +18,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h9m-f1-07E">
+                                <rect key="frame" x="50" y="50" width="500" height="520"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VwY-MG-VHf">
+                                        <rect key="frame" x="100" y="100" width="46" height="30"/>
+                                        <state key="normal" title="Till"/>
+                                        <connections>
+                                            <action selector="tillButtonPressed:" destination="ch2-jq-h9Q" eventType="touchUpInside" id="MlE-Yl-KKf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0WB-lQ-piO">
+                                        <rect key="frame" x="354" y="100" width="46" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="VwY-MG-VHf" firstAttribute="top" secondItem="h9m-f1-07E" secondAttribute="top" constant="100" id="0Jx-qY-vNg"/>
+                                    <constraint firstAttribute="trailing" secondItem="0WB-lQ-piO" secondAttribute="trailing" constant="100" id="5Hc-No-tiD"/>
+                                    <constraint firstItem="VwY-MG-VHf" firstAttribute="leading" secondItem="h9m-f1-07E" secondAttribute="leading" constant="100" id="MCH-NL-ZeW"/>
+                                    <constraint firstItem="0WB-lQ-piO" firstAttribute="top" secondItem="h9m-f1-07E" secondAttribute="top" constant="100" id="tzd-Qm-7EO"/>
+                                </constraints>
+                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NpX-hc-bzq" userLabel="Title Label">
                                 <rect key="frame" x="0.0" y="20" width="600" height="580"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -26,11 +50,22 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="h9m-f1-07E" firstAttribute="centerY" secondItem="8aG-uH-9A5" secondAttribute="centerY" id="0pr-YV-l1d"/>
                             <constraint firstAttribute="trailing" secondItem="NpX-hc-bzq" secondAttribute="trailing" id="1an-nz-3Yj"/>
+                            <constraint firstItem="h9m-f1-07E" firstAttribute="centerX" secondItem="8aG-uH-9A5" secondAttribute="centerX" id="3xS-RL-qbv"/>
+                            <constraint firstItem="h9m-f1-07E" firstAttribute="leading" secondItem="8aG-uH-9A5" secondAttribute="leadingMargin" constant="30" id="ZlZ-n9-P84"/>
                             <constraint firstItem="JxT-oX-jUg" firstAttribute="top" secondItem="NpX-hc-bzq" secondAttribute="bottom" id="bc4-uG-3ew"/>
                             <constraint firstItem="NpX-hc-bzq" firstAttribute="top" secondItem="LgH-Wz-8pU" secondAttribute="bottom" id="ivE-N7-C0m"/>
+                            <constraint firstItem="JxT-oX-jUg" firstAttribute="top" secondItem="h9m-f1-07E" secondAttribute="bottom" constant="30" id="mnd-6t-d7m"/>
+                            <constraint firstItem="h9m-f1-07E" firstAttribute="top" secondItem="LgH-Wz-8pU" secondAttribute="bottom" constant="30" id="phV-Sf-NMT"/>
                             <constraint firstItem="NpX-hc-bzq" firstAttribute="leading" secondItem="8aG-uH-9A5" secondAttribute="leading" id="rjs-jI-wvU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="h9m-f1-07E" secondAttribute="trailing" constant="30" id="skh-dR-MLm"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="0pr-YV-l1d"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="titleLabel" destination="NpX-hc-bzq" id="Rjv-e3-aMP"/>

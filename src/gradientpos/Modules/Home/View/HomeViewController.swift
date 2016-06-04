@@ -17,6 +17,10 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: HomeViewProtocol {
 
+    @IBAction func tillButtonPressed(sender: AnyObject) {
+        self.eventHandler.showTill()
+    }
+    
 	func setTitleText(title: String?) {
 		self.titleLabel.text = title
 	}

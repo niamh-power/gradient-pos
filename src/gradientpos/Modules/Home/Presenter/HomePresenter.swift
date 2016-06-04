@@ -23,9 +23,12 @@ extension HomePresenter: HomePresenterProtocol {
 	func prepareView() {
 		self.view?.setTitleText("Hello World")
 	}
+    func showTill() {
+        self.wireframe.presentTillView()
+    }
 }
 
 extension HomePresenter: HomeInteractorOutputProtocol {
 	
-
+    
 }
